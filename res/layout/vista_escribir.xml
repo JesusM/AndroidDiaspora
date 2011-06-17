@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/lightgray">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@color/black">
+		<RelativeLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="10px">
+			<ImageView android:layout_width="35px"
+				android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
+				android:id="@+id/iconolista" android:gravity="center"
+				android:layout_marginTop="15px" android:layout_marginBottom="15px"
+				android:layout_height="35px" android:src="@drawable/list_white"></ImageView>
+			<ImageView android:layout_width="55px" android:id="@+id/iconobusqueda"
+				android:layout_marginRight="15px" android:layout_marginBottom="15px"
+				android:layout_alignParentRight="true" android:layout_marginTop="15px"
+				android:layout_gravity="center" android:layout_height="35px"
+				android:src="@drawable/search_white"></ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_alignTop="@id/iconolista" android:layout_height="wrap_content"
+				android:layout_toRightOf="@id/iconolista" android:layout_toLeftOf="@id/iconobusqueda">
+				<ImageView android:layout_width="fill_parent" android:id="@+id/letrero"
+					android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+					android:src="@drawable/white_2x" />
+			</LinearLayout>
+
+
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="wrap_content"
+		android:layout_marginLeft="10px" android:layout_marginRight="10px" android:layout_marginTop="20dip">		
+		<EditText android:layout_width="fill_parent" android:hint="..y qué te cuentas?"
+			android:layout_marginTop="3px" android:lines="4"
+			android:layout_height="80px"></EditText>
+		<LinearLayout android:layout_width="fill_parent"
+			android:background="@drawable/my_border_white_open_all" android:id="@+id/make_public_layout"
+			android:orientation="horizontal" android:layout_height="wrap_content">
+			<CheckBox android:layout_width="fill_parent" android:text="make public" android:layout_gravity="center_vertical"
+				android:id="@+id/make_public" android:textColor="@color/black"
+				android:layout_height="wrap_content"></CheckBox>
+		</LinearLayout>
+
+		<TextView android:layout_width="fill_parent"
+			android:layout_marginTop="20px" android:layout_height="wrap_content"
+			android:textColor="@color/dkgray" android:textStyle="bold"
+			android:gravity="left" android:text="Elegir servicios"
+			android:layout_marginBottom="10dip"></TextView>
+		<LinearLayout android:layout_width="fill_parent"
+			android:id="@+id/layoutaAnadir" android:orientation="vertical"
+			android:layout_height="wrap_content">
+		</LinearLayout>
+		<Button android:layout_width="100dip" android:gravity="center"
+			android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+			android:background="@drawable/my_border_orange_open_all"
+			android:padding="7px" android:layout_marginTop="30px"
+			android:layout_height="35px" android:paddingLeft="45dip"
+			android:paddingRight="45dip" android:text="Share" android:textStyle='bold'
+			android:layout_gravity='center' android:textColor='@color/black'>
+		</Button>
+	</LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/lightgray" android:orientation="vertical">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@color/black">
+		<ImageView android:layout_width="fill_parent"
+			android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+			android:src="@drawable/white_2x" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="fill_parent"
+		android:layout_marginLeft="7px" android:layout_marginRight="7px"
+		android:gravity="center_vertical">
+		<TextView android:layout_width="fill_parent" android:gravity="center"
+			android:layout_height="wrap_content" android:textSize="22px"
+			android:textStyle="bold" android:textColor="@color/black"
+			android:text="¿Forgot your password?"></TextView>
+		<EditText android:layout_width="fill_parent" android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+			android:layout_marginTop="7dip" android:background="@drawable/my_border_white_not_open"
+			android:gravity="center" android:layout_height="wrap_content"
+			android:paddingTop="4dip" android:paddingBottom="4dip"></EditText>
+		<Button android:layout_width="fill_parent" android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+			android:layout_marginTop="15dip" android:layout_marginBottom="7dip"
+			android:paddingBottom="4dip" android:paddingTop="4dip" android:textColor="@color/black"
+			android:layout_gravity="center" android:layout_height="wrap_content"
+			android:text="Send me instruccions to re-establish my password"
+			android:textStyle="bold"></Button>
+		<Button android:id="@+id/Entrar" android:layout_width="wrap_content" android:layout_gravity="center"
+			android:layout_marginTop="15dip" android:paddingTop="5dip"
+			android:paddingBottom="5dip" android:layout_height="wrap_content"
+			android:paddingLeft="28px" android:paddingRight="28px" android:text="Log in"
+			android:textSize='16px' android:textStyle="bold" android:gravity='center_horizontal'
+			android:textColor='#084B8A' android:background="@drawable/my_border_orange_open_all">
+		</Button>
+	</LinearLayout>
+</LinearLayout>

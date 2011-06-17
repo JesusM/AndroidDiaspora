@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@color/white"
+		android:orientation="vertical">
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@color/black">
+			<RelativeLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginBottom="10px">
+				<ImageView android:layout_width="35px"
+					android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
+					android:id="@+id/iconolista" android:gravity="center"
+					android:layout_marginTop="15px" android:layout_marginBottom="15px"
+					android:layout_height="35px" android:src="@drawable/list_white"></ImageView>
+				<ImageView android:layout_width="35px" android:id="@+id/iconobusqueda"
+					android:layout_marginRight="15px" android:layout_marginBottom="15px"
+					android:layout_alignParentRight="true" android:layout_marginTop="15px"
+					android:layout_gravity="center" android:layout_height="35px"
+					android:src="@drawable/search_white"></ImageView>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_alignTop="@id/iconolista" android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/iconolista" android:layout_toLeftOf="@id/iconobusqueda">
+					<ImageView android:layout_width="fill_parent" android:id="@+id/letrero"
+						android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+						android:src="@drawable/white_2x" />
+				</LinearLayout>
+
+
+			</RelativeLayout>
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_marginTop="10px" android:layout_marginLeft="10px"
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<ImageView android:layout_width="35px"
+				android:layout_height="35px" android:id="@+id/Photo" android:src="@drawable/photo"></ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_marginLeft="5px" android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<TextView android:layout_width="fill_parent"
+					android:textStyle="bold" android:layout_height="wrap_content"
+					android:textColor="@color/black" android:text="User name"></TextView>
+				<TextView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:textColor="@color/gray"
+					android:text="Nombre de usuario@joindiaspora.com"></TextView>
+			</LinearLayout>
+
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginLeft="10px" android:layout_height="wrap_content"
+			android:layout_marginTop="20px">
+			<TextView android:layout_width="fill_parent"
+				android:textSize="15px" android:textStyle="bold" android:textColor="@color/dkgray"
+				android:text="orem ipsum dolor sit amet, consectetuer adipiscing elit.
+				 Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, 
+				 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, 
+				 sem. "
+				android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginLeft="10px" android:layout_height="wrap_content"
+			android:layout_marginTop="20px" android:id="@+id/minutos">
+			<TextView android:layout_width="fill_parent"
+				android:textStyle="bold" android:textColor="@color/gray"
+				android:text="yesterday" android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginLeft="10px" android:layout_height="wrap_content"
+			android:layout_marginTop="30px">
+			<TextView android:layout_width="fill_parent" android:id="@+id/Ocultar"
+				android:textColor="@color/AzulLetras" android:text="Hide"
+				android:layout_height="wrap_content"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="2px" android:background="@color/gray"
+			android:orientation="vertical">
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/LayoutRellenar2"
+			android:background="@color/FondoComentarios" android:orientation="vertical">
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginTop="15px" android:layout_marginRight="5px"
+			android:layout_marginLeft="5px" android:layout_height="wrap_content"
+			android:background="@color/FondoComentarios" android:orientation="vertical">
+			<EditText android:layout_width="fill_parent"
+				android:layout_height="65px" android:hint="comment" />
+
+		</LinearLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_marginBottom="15px" android:layout_marginTop="15px"
+			android:layout_marginRight="15px" android:layout_height="wrap_content">
+			<Button android:layout_width="wrap_content" android:padding="5dip"
+				android:layout_height="wrap_content" android:text="comment"
+				android:background="@drawable/my_border_button_blue"
+				android:textStyle="bold" android:textColor="@color/white"
+				android:paddingLeft="4dip" android:paddingRight="4dip"
+				android:layout_alignParentRight="true"></Button>
+		</RelativeLayout>
+	</LinearLayout>
+</ScrollView>

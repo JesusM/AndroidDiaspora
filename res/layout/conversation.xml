@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/lightgray">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:focusable="true" android:focusableInTouchMode="true">
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="@color/black">
+			<RelativeLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginBottom="10px">
+				<ImageView android:layout_width="35px"
+					android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
+					android:id="@+id/iconolista" android:gravity="center"
+					android:layout_marginTop="15px" android:layout_marginBottom="15px"
+					android:layout_height="35px" android:src="@drawable/list_white"></ImageView>
+				<ImageView android:layout_width="35px" android:id="@+id/iconobusqueda"
+					android:layout_marginRight="15px" android:layout_marginBottom="15px"
+					android:layout_alignParentRight="true" android:layout_marginTop="15px"
+					android:layout_gravity="center" android:layout_height="35px"
+					android:src="@drawable/search_white"></ImageView>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_alignTop="@id/iconolista" android:layout_height="wrap_content"
+					android:layout_toRightOf="@id/iconolista" android:layout_toLeftOf="@id/iconobusqueda">
+					<ImageView android:layout_width="fill_parent" android:id="@+id/letrero"
+						android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+						android:src="@drawable/white_2x" />
+				</LinearLayout>
+
+
+			</RelativeLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginTop="10dip" android:layout_height="fill_parent"
+			android:orientation="vertical">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginLeft="15dip"
+				android:layout_marginRight="15dip">
+				<TextView android:layout_width="wrap_content"
+					android:textSize="18dip" android:layout_alignParentLeft="true"
+					android:textColor="@color/black" android:layout_height="wrap_content"
+					android:text="Asunto" android:gravity="left"></TextView>
+				<ImageView android:layout_width="50dip"
+					android:layout_alignParentRight="true" android:layout_height="55dip"
+					android:src="@drawable/custom_photo"></ImageView>
+			</RelativeLayout>
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginLeft="15dip"
+				android:layout_marginRight="15dip">
+				<Button android:layout_width="wrap_content" android:id="@+id/response"
+					android:textSize="18dip" android:layout_alignParentLeft="true"
+					android:textColor="@color/black" android:layout_height="wrap_content"
+					android:text="Responder" android:gravity="left"></Button>
+				<Button android:layout_width="wrap_content" android:id="@+id/erase"
+					android:textSize="18dip" android:layout_alignParentRight="true"
+					android:textColor="@color/black" android:layout_height="wrap_content"
+					android:text="Eliminar" android:gravity="right"></Button>
+
+			</RelativeLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_marginBottom="15dip" android:layout_height="2dip"
+			android:background="@color/gray"></LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/rellenar"
+			android:orientation="vertical"></LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:paddingLeft="5dip" android:paddingRight="5dip"
+			android:layout_marginTop="12dip" android:layout_height="wrap_content"
+			android:layout_marginBottom="10dip">
+			<ImageView android:layout_width="45dip"
+				android:layout_height="45dip" android:src="@drawable/custom_photo"></ImageView>
+			<EditText android:layout_width="fill_parent" android:id="@+id/respon"
+				android:layout_marginLeft="7dip" android:paddingLeft="5dip"
+				android:layout_height="wrap_content" android:lines="4"></EditText>
+		</LinearLayout>
+		<RelativeLayout android:layout_width="fill_parent"
+			android:paddingRight="5dip" android:paddingLeft="7dip"
+			android:layout_height="wrap_content" android:layout_marginBottom="10dip">
+			<Button android:layout_width="wrap_content" android:id="@+id/a"
+				android:layout_alignParentRight="true" android:layout_height="wrap_content"
+				android:paddingLeft="8dip" android:paddingRight="8dip"
+				android:paddingTop="3dip" android:paddingBottom="3dip"
+				android:textColor="@color/black" android:background="@drawable/my_border_all_open"
+				android:text="Aceptar"></Button>
+			<Button android:layout_width="wrap_content"
+				android:layout_marginRight="15dip" android:layout_toLeftOf="@id/a"
+				android:layout_height="wrap_content" android:paddingLeft="8dip"
+				android:paddingRight="8dip" android:paddingTop="3dip"
+				android:paddingBottom="3dip" 
+				android:background="@drawable/my_border_all_open" android:textColor="@color/black"
+				android:text="Cancelar"></Button>
+		</RelativeLayout>
+	</LinearLayout>
+</ScrollView>

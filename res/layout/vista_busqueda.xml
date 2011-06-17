@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/lightgray">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:background="@color/black">
+		<RelativeLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="10px">
+			<ImageView android:layout_width="35px"
+				android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
+				android:id="@+id/iconolista" android:gravity="center"
+				android:layout_marginTop="15px" android:layout_marginBottom="15px"
+				android:layout_height="35px" android:src="@drawable/list_white"></ImageView>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_alignTop="@id/iconolista" android:layout_height="wrap_content"
+				 android:layout_toRightOf="@id/iconolista">
+				<ImageView android:layout_width="fill_parent" android:id="@+id/letrero"
+					android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
+					android:src="@drawable/white_2x" />
+			</LinearLayout>
+
+
+		</RelativeLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginLeft="1dip" android:layout_marginRight="1dip"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:layout_marginTop="45dip" android:layout_marginBottom="15dip">
+		<EditText android:id="@+id/Button07" android:layout_width="fill_parent"
+			android:paddingTop="3dip" android:paddingBottom="3dip"
+			android:layout_marginTop="5px" android:layout_marginRight="5px"
+			android:background="@drawable/my_border_all_open"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:drawableLeft="@drawable/ic_search_category_default" />
+
+		<Button android:id="@+id/Buscar" android:layout_width="wrap_content"
+			android:layout_marginLeft="7px" android:layout_marginRight="7px"
+			android:layout_marginTop="15px" android:layout_height="wrap_content"
+			android:paddingLeft="25px" android:paddingRight="25px" android:text="Buscar"
+			android:paddingTop="6dip" android:paddingBottom="6dip"
+			android:textSize='16px' android:gravity='center_horizontal'
+			android:textStyle="bold" android:textColor='@color/black'
+			android:layout_gravity="center" android:background="@drawable/my_border_button_search">
+		</Button>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginTop="35dip" android:layout_height="1dip"
+		android:background="@color/gray"></LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:background="@color/lightgray" android:layout_marginTop="15dip"
+		android:layout_marginBottom="15dip">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:textSize="16dip"
+			android:text="Hey, you need to look for something!" android:textColor="@color/black"
+			android:textStyle="bold"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="1dip" android:background="@color/gray"></LinearLayout>
+
+</LinearLayout>
