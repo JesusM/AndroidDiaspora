@@ -78,7 +78,7 @@ public class VistaComentarios extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				startActivity(new Intent(VistaComentarios.this,
-						PantallaBonita.class));
+						ViewAspects.class));
 				finish();
 			}
 		});

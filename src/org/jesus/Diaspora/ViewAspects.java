@@ -30,7 +30,7 @@ import android.widget.LinearLayout.LayoutParams;
  * 
  */
 
-public class PantallaBonita extends Activity implements OnClickListener{
+public class ViewAspects extends Activity implements OnClickListener{
 	private List<String> aspectos = new ArrayList<String>();
 	public int ind;
 
@@ -58,7 +58,7 @@ public class PantallaBonita extends Activity implements OnClickListener{
 					@Override
 					public void onClick(View arg0) {
 						// TODO Auto-generated method stub
-						startActivity(new Intent(PantallaBonita.this,
+						startActivity(new Intent(ViewAspects.this,
 								VistaBusqueda.class));
 						finish();
 					}
@@ -68,21 +68,21 @@ public class PantallaBonita extends Activity implements OnClickListener{
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				startActivity(new Intent(PantallaBonita.this,ViewNotifications.class));
+				startActivity(new Intent(ViewAspects.this,ViewNotifications.class));
 			}});
 		((RelativeLayout)findViewById(R.id.inbox)).setOnClickListener(new OnClickListener(){
 
 			@Override
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				startActivity(new Intent(PantallaBonita.this,ViewInbox.class));
+				startActivity(new Intent(ViewAspects.this,ViewInbox.class));
 			}});
 		((ImageView)findViewById(R.id.letrero)).setOnClickListener(new OnClickListener(){
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				startActivity(new Intent(PantallaBonita.this,PantallaPrincipal.class));
+				startActivity(new Intent(ViewAspects.this,PantallaPrincipal.class));
 				finish();
 			}});
 
@@ -181,7 +181,7 @@ public class PantallaBonita extends Activity implements OnClickListener{
 	}
 
 	public void onBackPressed() {
-		startActivity(new Intent(PantallaBonita.this, PantallaPrincipal.class));
+		startActivity(new Intent(ViewAspects.this, PantallaPrincipal.class));
 		finish();
 	}
 
@@ -205,7 +205,7 @@ public class PantallaBonita extends Activity implements OnClickListener{
 
 		editor.putString("aspecto", aspectos.get(arg0.getId()));
 		editor.commit();
-		startActivity(new Intent(PantallaBonita.this,
+		startActivity(new Intent(ViewAspects.this,
 				PantallaPrincipal.class));
 		finish();
 	}

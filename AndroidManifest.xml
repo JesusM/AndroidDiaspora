@@ -13,7 +13,7 @@
 		</activity>
 		<activity android:name=".PantallaPrincipal" android:label="@string/app_name"
 			android:windowSoftInputMode="adjustResize"></activity>
-		<activity android:name=".PantallaBonita"></activity>
+		<activity android:name=".ViewAspects"></activity>
 		<activity android:name=".VistaBusqueda"></activity>
 		<activity android:name=".VistaEscribir"></activity>
 		<activity android:name=".VistaComentarios"></activity>

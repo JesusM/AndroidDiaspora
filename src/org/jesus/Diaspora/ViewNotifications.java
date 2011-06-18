@@ -346,7 +346,7 @@ public class ViewNotifications extends Activity {
 
 	}
 	public void onBackPressed() {
-		startActivity(new Intent(ViewNotifications.this, PantallaBonita.class));
+		startActivity(new Intent(ViewNotifications.this, ViewAspects.class));
 		finish();
 	}
 

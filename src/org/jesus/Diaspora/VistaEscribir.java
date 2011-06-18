@@ -43,7 +43,7 @@ public class VistaEscribir extends Activity implements OnCheckedChangeListener{
 					public void onClick(View arg0) {
 						// TODO Auto-generated method stub
 						startActivity(new Intent(VistaEscribir.this,
-								PantallaBonita.class));
+								ViewAspects.class));
 						finish();
 					}
 				});

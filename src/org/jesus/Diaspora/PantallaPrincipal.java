@@ -46,7 +46,7 @@ public class PantallaPrincipal extends Activity {
 					public void onClick(View arg0) {
 						// TODO Auto-generated method stub
 						startActivity(new Intent(PantallaPrincipal.this,
-								PantallaBonita.class));
+								ViewAspects.class));
 						finish();
 					}
 				});

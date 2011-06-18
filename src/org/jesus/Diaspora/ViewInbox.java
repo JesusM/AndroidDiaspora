@@ -276,7 +276,7 @@ public class ViewInbox extends Activity implements OnClickListener{
 	}
 
 	public void onBackPressed() {
-		startActivity(new Intent(this, PantallaBonita.class));
+		startActivity(new Intent(this, ViewAspects.class));
 		finish();
 	}
 
