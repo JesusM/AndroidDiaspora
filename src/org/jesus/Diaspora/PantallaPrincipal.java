@@ -2,7 +2,7 @@ package org.jesus.Diaspora;
 
 import java.util.LinkedList;
 
-import org.jesus.Diaspora.R;
+
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
@@ -26,6 +27,7 @@ public class PantallaPrincipal extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.principal);
 		Toast.makeText(getBaseContext(), "example of main view",
 				Toast.LENGTH_LONG).show();
