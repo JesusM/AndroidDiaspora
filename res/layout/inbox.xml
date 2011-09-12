@@ -1,59 +1,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
 	android:background="#A4A4A4">
-	<LinearLayout android:orientation="vertical"
-		android:layout_width="fill_parent" android:layout_height="fill_parent">
-		<LinearLayout android:orientation="horizontal"
-			android:layout_width="fill_parent" android:layout_height="wrap_content"
-			android:background="@color/black">
-			<RelativeLayout android:orientation="horizontal"
-				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:layout_marginBottom="10px">
-				<ImageView android:layout_width="35px"
-					android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
-					android:id="@+id/iconolista" android:gravity="center"
-					android:layout_marginTop="15px" android:layout_marginBottom="15px"
-					android:layout_height="35px" android:src="@drawable/list_white"></ImageView>
-				<ImageView android:layout_width="35px" android:id="@+id/iconobusqueda"
-					android:layout_marginRight="15px" android:layout_marginBottom="15px"
-					android:layout_alignParentRight="true" android:layout_marginTop="15px"
-					android:layout_gravity="center" android:layout_height="35px"
-					android:src="@drawable/search_white"></ImageView>
-				<LinearLayout android:layout_width="fill_parent"
-					android:layout_alignTop="@id/iconolista" android:layout_height="wrap_content"
-					 android:layout_toRightOf="@id/iconolista"
-					android:layout_toLeftOf="@id/iconobusqueda">
-					<ImageView android:layout_width="fill_parent" android:id="@+id/letrero"
-						android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
-						android:src="@drawable/white_2x" />
-				</LinearLayout>
 
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginTop="15dip" android:layout_height="wrap_content"
+		android:id="@+id/comentarios" android:orientation="vertical"></LinearLayout>
 
-			</RelativeLayout>
-		</LinearLayout>
-		<RelativeLayout android:layout_width="fill_parent"
-			android:layout_marginLeft="5dip" android:layout_marginTop="14dip"
-			android:layout_marginRight="5dip" android:layout_height="wrap_content"
-			android:orientation="horizontal">
-		
-			<TextView android:layout_width="fill_parent" android:layout_alignParentLeft="true"
-				android:layout_centerInParent="true" 
-				android:gravity="left" android:layout_marginLeft="7dip"
-				android:layout_height="wrap_content" android:textStyle="bold"
-				android:textSize="20dip" android:textColor="@color/black"
-				android:text="Inbox"></TextView>
-			<Button android:layout_width="wrap_content" android:id="@+id/new_message"
-				android:layout_alignParentRight="true"
-				android:layout_centerInParent="true" android:layout_height="wrap_content"
-				android:text="New Message" android:paddingLeft="9dip"
-				android:paddingTop="5dip" android:paddingRight="9dip"
-				android:paddingBottom="5dip" android:textColor="@color/black"
-				android:textStyle="bold" android:background="@drawable/my_border_not_open"></Button>
-		</RelativeLayout>		
-		<LinearLayout android:layout_width="fill_parent" android:layout_marginTop="15dip"
-			android:layout_height="wrap_content" android:id="@+id/messages"
-			android:orientation="vertical"></LinearLayout>
-
-
-	</LinearLayout>
 </ScrollView>

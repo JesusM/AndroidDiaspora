@@ -33,14 +33,14 @@ public class ViewInbox extends Activity implements OnClickListener{
 		loadSimulatedNotifys();
 
 		loadInterface();
-		((Button)findViewById(R.id.new_message)).setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(ViewInbox.this,NewMessage.class));
-				finish();
-			}});
+//		((Button)findViewById(R.id.new_message)).setOnClickListener(new OnClickListener(){
+//
+//			@Override
+//			public void onClick(View v) {
+//				// TODO Auto-generated method stub
+//				startActivity(new Intent(ViewInbox.this,NewMessage.class));
+//				finish();
+//			}});
 		((ImageView)findViewById(R.id.letrero)).setOnClickListener(new OnClickListener(){
 
 			@Override
@@ -237,8 +237,8 @@ public class ViewInbox extends Activity implements OnClickListener{
 			lPrincipal.setPadding(3, 7, 3, 7);
 			//p.addView(lPrincipal);
 			//p.addView(rayaGris);
-			((LinearLayout)findViewById(R.id.messages)).addView(lPrincipal);
-			((LinearLayout)findViewById(R.id.messages)).addView(rayaGris);
+			((LinearLayout)findViewById(R.id.comentarios)).addView(lPrincipal);
+			((LinearLayout)findViewById(R.id.comentarios)).addView(rayaGris);
 			lPrincipal.setId(i);
 			list.add(lPrincipal);
 		}
