@@ -23,6 +23,7 @@
 		<activity android:name=".NewMessage"></activity>
 		<activity android:name=".Dashboard"></activity>
 		<activity android:name=".Home_view_pager"></activity>
+		<activity android:name=".AdvancedPreferences"></activity>
 		<activity android:name=".Conversation"
 			android:windowSoftInputMode="adjustResize|stateHidden"></activity>
 	</application>
