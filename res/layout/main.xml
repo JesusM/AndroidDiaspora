@@ -40,7 +40,7 @@
 					android:layout_height="41dip" android:password='true' android:hint='Password'
 					android:background="@drawable/my_border_open_top_log_in"
 					android:gravity="center">
-				</EditText>
+				</EditText> 
 
 				<TextView android:layout_width="fill_parent" android:id='@+id/cartel2'
 					android:text="¿Don't remember your password?"
@@ -55,8 +55,8 @@
 					android:paddingBottom="5dip" android:layout_height="wrap_content"
 					android:paddingLeft="28px" android:paddingRight="28px"
 					android:text="Log in" android:textSize='16px' android:textStyle="bold"
-					android:gravity='center_horizontal' android:textColor='@color/black'
-					android:background="@drawable/my_border_orange_open_all">
+					android:gravity='center_horizontal|center_vertical' android:textColor='@color/white'
+					android:background="@drawable/widget_login_selector">
 				</Button>
 			</LinearLayout>
 		</LinearLayout>
