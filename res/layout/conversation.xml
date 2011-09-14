@@ -8,27 +8,30 @@
 		<LinearLayout android:orientation="horizontal"
 			android:layout_width="fill_parent" android:layout_height="wrap_content"
 			android:background="@color/black">
-			<RelativeLayout android:orientation="horizontal"
-				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:layout_marginBottom="10px">
-				<ImageView android:layout_width="35px"
-					android:layout_alignParentLeft="true" android:layout_marginLeft="10px"
-					android:id="@+id/iconolista" android:gravity="center"
-					android:layout_marginTop="15px" android:layout_marginBottom="15px"
-					android:layout_height="35px" android:src="@drawable/list_white"></ImageView>
-				<ImageView android:layout_width="35px" android:id="@+id/iconobusqueda"
-					android:layout_marginRight="15px" android:layout_marginBottom="15px"
-					android:layout_alignParentRight="true" android:layout_marginTop="15px"
-					android:layout_gravity="center" android:layout_height="35px"
-					android:src="@drawable/search_white"></ImageView>
-				<LinearLayout android:layout_width="fill_parent"
-					android:layout_alignTop="@id/iconolista" android:layout_height="wrap_content"
-					android:layout_toRightOf="@id/iconolista" android:layout_toLeftOf="@id/iconobusqueda">
-					<ImageView android:layout_width="fill_parent" android:id="@+id/letrero"
-						android:layout_gravity="center_horizontal" android:layout_height="wrap_content"
-						android:src="@drawable/white_2x" />
-				</LinearLayout>
+			<RelativeLayout android:id="@+id/label_header"
+				android:background="@drawable/home_actionbar" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<ImageView android:layout_width="wrap_content" android:id="@+id/photo_env"
+					android:padding="2dip" android:layout_centerVertical="true"
+					android:layout_alignParentLeft="true" android:gravity="center_vertical"
+					android:layout_height="wrap_content" android:src="@drawable/photo"
+					android:layout_gravity="left|center_vertical" />
 
+
+
+				<ImageView android:layout_width="wrap_content" android:id="@+id/photo_dest"
+					android:padding="2dip" android:layout_centerVertical="true"
+					android:layout_alignParentRight="true" android:gravity="center_vertical"
+					android:layout_height="wrap_content" android:src="@drawable/photo"
+					android:layout_gravity="right|center_vertical" />
+
+				<TextView android:layout_width="wrap_content"
+					android:gravity="center" android:textColor="@color/white"
+					android:layout_centerVertical="true" android:paddingLeft="10dip"
+					android:paddingRight="10dip" android:id="@+id/asunto"
+					android:layout_toLeftOf="@id/photo_dest" android:layout_toRightOf="@id/photo_env"
+					android:layout_height="wrap_content" android:textSize="25dip"
+					android:text="Asunto"></TextView>
 
 			</RelativeLayout>
 		</LinearLayout>
@@ -89,9 +92,8 @@
 				android:layout_marginRight="15dip" android:layout_toLeftOf="@id/a"
 				android:layout_height="wrap_content" android:paddingLeft="8dip"
 				android:paddingRight="8dip" android:paddingTop="3dip"
-				android:paddingBottom="3dip" 
-				android:background="@drawable/my_border_all_open" android:textColor="@color/black"
-				android:text="Cancelar"></Button>
+				android:paddingBottom="3dip" android:background="@drawable/my_border_all_open"
+				android:textColor="@color/black" android:text="Cancelar"></Button>
 		</RelativeLayout>
 	</LinearLayout>
 </ScrollView>

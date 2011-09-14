@@ -12,6 +12,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -20,7 +21,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 
-public class VistaEscribir extends Activity implements OnCheckedChangeListener{
+public class VistaEscribir extends Activity implements OnCheckedChangeListener {
 	/** Called when the activity is first created. */
 	public List<String> servicios = new ArrayList<String>();
 	public List<LinearLayout> lCheck = new ArrayList<LinearLayout>();
@@ -30,34 +31,35 @@ public class VistaEscribir extends Activity implements OnCheckedChangeListener{
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		Toast.makeText(getBaseContext(), "example of write view",
 				Toast.LENGTH_LONG).show();
 		setContentView(R.layout.vista_escribir);
 		servicios.add("twitter");
 		servicios.add("facebook");
 		generarInterfaz();
-		((ImageView) findViewById(R.id.iconolista))
-				.setOnClickListener(new OnClickListener() {
-
-					@Override
-					public void onClick(View arg0) {
-						// TODO Auto-generated method stub
-						startActivity(new Intent(VistaEscribir.this,
-								ViewAspects.class));
-						finish();
-					}
-				});
-		((ImageView) findViewById(R.id.iconobusqueda))
-				.setOnClickListener(new OnClickListener() {
-
-					@Override
-					public void onClick(View arg0) {
-						// TODO Auto-generated method stub
-						startActivity(new Intent(VistaEscribir.this,
-								VistaBusqueda.class));
-						finish();
-					}
-				});
+		// ((ImageView) findViewById(R.id.iconolista))
+		// .setOnClickListener(new OnClickListener() {
+		//
+		// @Override
+		// public void onClick(View arg0) {
+		// // TODO Auto-generated method stub
+		// startActivity(new Intent(VistaEscribir.this,
+		// ViewAspects.class));
+		// finish();
+		// }
+		// });
+		// ((ImageView) findViewById(R.id.iconobusqueda))
+		// .setOnClickListener(new OnClickListener() {
+		//
+		// @Override
+		// public void onClick(View arg0) {
+		// // TODO Auto-generated method stub
+		// startActivity(new Intent(VistaEscribir.this,
+		// VistaBusqueda.class));
+		// finish();
+		// }
+		// });
 		((CheckBox) findViewById(R.id.make_public))
 				.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
@@ -77,16 +79,18 @@ public class VistaEscribir extends Activity implements OnCheckedChangeListener{
 				});
 		for (int i = 0; i < checks.size(); i++) {
 			ind_check = i;
-			checks.get(i).setOnCheckedChangeListener(this);				
+			checks.get(i).setOnCheckedChangeListener(this);
 		}
-		((ImageView)findViewById(R.id.letrero)).setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(VistaEscribir.this,PantallaPrincipal.class));
-				finish();
-			}});
+		// ((ImageView)findViewById(R.id.letrero)).setOnClickListener(new
+		// OnClickListener(){
+		//
+		// @Override
+		// public void onClick(View v) {
+		// // TODO Auto-generated method stub
+		// startActivity(new
+		// Intent(VistaEscribir.this,PantallaPrincipal.class));
+		// finish();
+		// }});
 	}
 
 	private void generarInterfaz() {
@@ -100,15 +104,14 @@ public class VistaEscribir extends Activity implements OnCheckedChangeListener{
 					LinearLayout.LayoutParams.WRAP_CONTENT);
 			l.setLayoutParams(params);
 			if (i == 0) {
-				l
-						.setBackgroundResource(R.drawable.my_border_white_open_bottom);
+				l.setBackgroundResource(R.drawable.my_border_white_open_bottom);
 			} else if (i == servicios.size() - 1) {
 				l.setBackgroundResource(R.drawable.my_border_white_open_top);
 			} else {
 				l.setBackgroundResource(R.drawable.my_border_white_not_open);
 			}
-			//l.setPadding(7, 0, 7, 0);
-			//c1.setPadding(5, 5, 5, 5);
+			// l.setPadding(7, 0, 7, 0);
+			// c1.setPadding(5, 5, 5, 5);
 			c1.setLayoutParams(params);
 			c1.setText(servicios.get(i));
 			c1.setGravity(Gravity.LEFT | Gravity.CENTER_VERTICAL);
@@ -122,49 +125,33 @@ public class VistaEscribir extends Activity implements OnCheckedChangeListener{
 
 	}
 
-	public void onBackPressed() {
-		startActivity(new Intent(VistaEscribir.this, PantallaPrincipal.class));
-		finish();
-	}
-	
+
 
 	@Override
 	public void onCheckedChanged(CompoundButton arg0, boolean arg1) {
 		// TODO Auto-generated method stub
 		if (arg0.getId() == 0) {
-			if(arg1==true){
-				lCheck
-				.get(arg0.getId())
-				.setBackgroundResource(
+			if (arg1 == true) {
+				lCheck.get(arg0.getId()).setBackgroundResource(
 						R.drawable.my_border_edittext_open_bottom_selected);
-			}else{
-				lCheck
-				.get(arg0.getId())
-				.setBackgroundResource(
+			} else {
+				lCheck.get(arg0.getId()).setBackgroundResource(
 						R.drawable.my_border_edittext_open_bottom);
 			}
 		} else if (arg0.getId() == lCheck.size() - 1) {
-			if(arg1==true){
-				lCheck
-				.get(arg0.getId())
-				.setBackgroundResource(
+			if (arg1 == true) {
+				lCheck.get(arg0.getId()).setBackgroundResource(
 						R.drawable.my_border_edittext_open_top_selected);
-			}else{
-				lCheck
-				.get(arg0.getId())
-				.setBackgroundResource(
+			} else {
+				lCheck.get(arg0.getId()).setBackgroundResource(
 						R.drawable.my_border_edittext_open_top);
 			}
 		} else {
-			if(arg1==true){
-				lCheck
-				.get(arg0.getId())
-				.setBackgroundResource(
+			if (arg1 == true) {
+				lCheck.get(arg0.getId()).setBackgroundResource(
 						R.drawable.my_border_not_open_selected);
-			}else{
-				lCheck
-				.get(arg0.getId())
-				.setBackgroundResource(
+			} else {
+				lCheck.get(arg0.getId()).setBackgroundResource(
 						R.drawable.my_border_not_open);
 			}
 		}

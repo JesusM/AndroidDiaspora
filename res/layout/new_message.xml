@@ -19,19 +19,19 @@
 			android:layout_marginTop="15dip" android:layout_height="wrap_content"
 			android:layout_marginLeft="10dip">
 			<EditText android:layout_width="fill_parent" android:hint="To"
-				android:shadowColor="@color/blue"
-				android:shadowDx="3.5" android:paddingTop="6dip"
-				android:paddingBottom="6dip" android:layout_marginRight="10dip"
-				android:layout_height="wrap_content" android:gravity="left|center_vertical"></EditText>
+				android:shadowColor="@color/blue" android:shadowDx="3.5"
+				android:paddingTop="6dip" android:paddingBottom="6dip"
+				android:layout_marginRight="10dip" android:layout_height="wrap_content"
+				android:gravity="left|center_vertical"></EditText>
 		</LinearLayout>
 		<LinearLayout android:layout_width="fill_parent"
 			android:layout_marginTop="15dip" android:layout_height="wrap_content"
 			android:paddingBottom="10dip" android:layout_marginLeft="10dip">
 
 			<EditText android:layout_width="fill_parent" android:hint="Asunto"
-				android:paddingTop="6dip"
-				android:paddingBottom="6dip" android:layout_marginRight="10dip"
-				android:layout_height="wrap_content" android:gravity="left|center_vertical"></EditText>
+				android:paddingTop="6dip" android:paddingBottom="6dip"
+				android:layout_marginRight="10dip" android:layout_height="wrap_content"
+				android:gravity="left|center_vertical"></EditText>
 		</LinearLayout>
 		<LinearLayout android:layout_width="fill_parent"
 
@@ -39,7 +39,21 @@
 			android:paddingTop="10dip" android:paddingBottom="10dip"
 			android:layout_marginLeft="10dip">
 
+			<!--
+				<EditText android:layout_width="fill_parent" android:hint="Message"
+			-->
+			<!--
+				android:paddingBottom="6dip" android:layout_marginRight="10dip"
+			-->
+			<!--
+				android:layout_marginBottom="10dip"
+				android:layout_height="fill_parent"
+			-->
+			<!--				android:lines="6" android:gravity="top|left"></EditText>-->
+
 			<EditText android:layout_width="fill_parent" android:hint="Message"
+				android:scrollHorizontally="false" android:maxLines="3"
+				android:textAppearance="?android:attr/textAppearanceMedium"
 				android:paddingBottom="6dip" android:layout_marginRight="10dip"
 				android:layout_marginBottom="10dip" android:layout_height="fill_parent"
 				android:lines="6" android:gravity="top|left"></EditText>

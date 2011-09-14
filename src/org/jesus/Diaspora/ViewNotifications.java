@@ -10,6 +10,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -35,6 +36,7 @@ public class ViewNotifications extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.view_notifications);
 		Toast.makeText(getBaseContext(), "example of notifications", Toast.LENGTH_LONG).show();
 		// load the simulated notifications
@@ -60,14 +62,14 @@ public class ViewNotifications extends Activity {
 //						((LinearLayout) findViewById(R.id.layout_notif_a_rellenar)).removeAllViews();
 //					}
 //				});
-		((ImageView)findViewById(R.id.letrero)).setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(ViewNotifications.this,PantallaPrincipal.class));
-				finish();
-			}});
+//		((ImageView)findViewById(R.id.letrero)).setOnClickListener(new OnClickListener(){
+//
+//			@Override
+//			public void onClick(View v) {
+//				// TODO Auto-generated method stub
+//				startActivity(new Intent(ViewNotifications.this,PantallaPrincipal.class));
+//				finish();
+//			}});
 	}
 
 	private void loadInterface() {
@@ -345,9 +347,6 @@ public class ViewNotifications extends Activity {
 		notifications.add(l2);
 
 	}
-	public void onBackPressed() {
-		startActivity(new Intent(ViewNotifications.this, ViewAspects.class));
-		finish();
-	}
+
 
 }

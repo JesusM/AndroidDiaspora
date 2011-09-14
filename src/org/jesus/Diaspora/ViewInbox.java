@@ -11,6 +11,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -26,6 +27,7 @@ public class ViewInbox extends Activity implements OnClickListener{
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.message_inbox);
 		Toast.makeText(getBaseContext(), "example of the inbox view",
 				Toast.LENGTH_LONG).show();
@@ -41,14 +43,14 @@ public class ViewInbox extends Activity implements OnClickListener{
 //				startActivity(new Intent(ViewInbox.this,NewMessage.class));
 //				finish();
 //			}});
-		((ImageView)findViewById(R.id.letrero)).setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(ViewInbox.this,PantallaPrincipal.class));
-				finish();
-			}});
+//		((ImageView)findViewById(R.id.letrero)).setOnClickListener(new OnClickListener(){
+//
+//			@Override
+//			public void onClick(View v) {
+//				// TODO Auto-generated method stub
+//				startActivity(new Intent(ViewInbox.this,PantallaPrincipal.class));
+//				finish();
+//			}});
 
 	}
 
