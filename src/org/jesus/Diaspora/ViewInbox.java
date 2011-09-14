@@ -26,7 +26,7 @@ public class ViewInbox extends Activity implements OnClickListener{
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.inbox);
+		setContentView(R.layout.message_inbox);
 		Toast.makeText(getBaseContext(), "example of the inbox view",
 				Toast.LENGTH_LONG).show();
 		// load the simulated notifications
@@ -101,8 +101,8 @@ public class ViewInbox extends Activity implements OnClickListener{
 				
 			
 
-			/*((LinearLayout) findViewById(R.id.layout_notif_a_rellenar))
-					.addView(lprincipal);*/
+			((LinearLayout) findViewById(R.id.layout_notif_a_rellenar))
+					.addView(lprincipal);
 		}
 
 	}

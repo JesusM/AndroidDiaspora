@@ -48,18 +48,18 @@ public class ViewNotifications extends Activity {
 		// load the interface depedient of the simulated notifications
 		loadInterface();
 
-		((Button) findViewById(R.id.Mark_as_read))
-				.setOnClickListener(new OnClickListener() {
-
-					@Override
-					public void onClick(View arg0) {
-						// TODO Auto-generated method stub
-						number_of_not = 0;
-						((TextView) findViewById(R.id.number_of_notifications))
-								.setText(number_of_not + "");
-						((LinearLayout) findViewById(R.id.layout_notif_a_rellenar)).removeAllViews();
-					}
-				});
+//		((Button) findViewById(R.id.Mark_as_read))
+//				.setOnClickListener(new OnClickListener() {
+//
+//					@Override
+//					public void onClick(View arg0) {
+//						// TODO Auto-generated method stub
+//						number_of_not = 0;
+//						((TextView) findViewById(R.id.number_of_notifications))
+//								.setText(number_of_not + "");
+//						((LinearLayout) findViewById(R.id.layout_notif_a_rellenar)).removeAllViews();
+//					}
+//				});
 		((ImageView)findViewById(R.id.letrero)).setOnClickListener(new OnClickListener(){
 
 			@Override

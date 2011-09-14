@@ -10,8 +10,9 @@
 		android:layout_height="fill_parent"
 		android:src="@drawable/fondo"></ImageView>
 	-->
-	<LinearLayout android:orientation="vertical" android:background="@color/lightgray"
-		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:background="@color/lightgray" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
 
 		<LinearLayout android:orientation="horizontal"
 			android:layout_width="fill_parent" android:layout_height="wrap_content"
@@ -24,39 +25,46 @@
 			android:gravity="center" android:layout_width="fill_parent"
 			android:layout_marginLeft='17dip' android:layout_marginRight='17dip'
 			android:layout_height="fill_parent" android:weightSum="1">
-			<ImageView android:layout_width="fill_parent"
-				android:layout_height="75dip" android:src="@drawable/asterisk"
-				android:layout_gravity="center" android:id="@+id/asterisk_rotate"/>
+			<ImageView android:layout_width="wrap_content"
+				android:layout_weight="0.3" android:layout_height="wrap_content"
+				android:src="@drawable/asterisk" android:layout_gravity="center"
+				android:id="@+id/asterisk_rotate" />
 			<LinearLayout android:orientation="vertical"
-				android:gravity="center" android:layout_width="fill_parent"
+				android:layout_gravity="center" android:layout_width="fill_parent"
 				android:padding="12dip" android:layout_height="wrap_content"
-				android:background="@drawable/background_with_alpha">
-				<EditText android:id="@+id/user" android:layout_width="fill_parent"
-					android:layout_height="41dip" android:hint='User name'
-					android:background="@drawable/my_border_open_bottom_log_in"
-					android:layout_gravity="center" android:gravity="center">
-				</EditText>
-				<EditText android:id="@+id/pass" android:layout_width="fill_parent"
-					android:layout_height="41dip" android:password='true' android:hint='Password'
-					android:background="@drawable/my_border_open_top_log_in"
-					android:gravity="center">
-				</EditText> 
+				android:background="@drawable/background_with_alpha"
+				android:layout_weight="0.3">
+				<LinearLayout android:layout_weight="1"
+					android:layout_height="wrap_content" android:layout_width="fill_parent"
+					android:orientation="vertical">
+					<EditText android:id="@+id/user" android:layout_width="fill_parent"
+						android:layout_height="41dip" android:hint='User name'
+						android:background="@drawable/my_border_open_bottom_log_in"
+						android:layout_gravity="center" android:gravity="center">
+					</EditText>
+					<EditText android:id="@+id/pass" android:layout_width="fill_parent"
+						android:layout_height="41dip" android:password='true'
+						android:hint='Password' android:background="@drawable/my_border_open_top_log_in"
+						android:gravity="center">
+					</EditText>
+				</LinearLayout>
 
 				<TextView android:layout_width="fill_parent" android:id='@+id/cartel2'
 					android:text="¿Don't remember your password?"
-					android:layout_height="wrap_content" android:gravity="center"
-					android:textSize='14dip' android:layout_marginRight='17dip'
-					android:layout_marginLeft='17dip' android:layout_marginTop='14dip'
-					android:layout_marginBottom='7dip' android:textColor='@color/white'
-					android:textStyle="bold">
+					android:layout_weight="1" android:layout_height="wrap_content"
+					android:gravity="center" android:textSize='14dip'
+					android:layout_marginRight='17dip' android:layout_marginLeft='17dip'
+					android:layout_marginTop='14dip' android:layout_marginBottom='7dip'
+					android:textColor='@color/white' android:textStyle="bold">
 				</TextView>
 				<Button android:id="@+id/Entrar" android:layout_width="wrap_content"
-					android:layout_marginTop="15dip" android:paddingTop="5dip"
+					android:layout_weight="1" android:layout_marginTop="15dip"
+					android:paddingTop="5dip" android:layout_gravity="center"
 					android:paddingBottom="5dip" android:layout_height="wrap_content"
 					android:paddingLeft="28px" android:paddingRight="28px"
-					android:text="Log in" android:textSize='16px' android:textStyle="bold"
-					android:gravity='center_horizontal|center_vertical' android:textColor='@color/white'
-					android:background="@drawable/widget_login_selector">
+					android:text="Log in" android:textStyle="bold"
+					android:gravity='center_horizontal|center_vertical'
+					android:textColor='@color/white' android:background="@drawable/widget_login_selector">
 				</Button>
 			</LinearLayout>
 		</LinearLayout>
