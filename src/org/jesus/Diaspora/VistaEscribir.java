@@ -68,13 +68,13 @@ public class VistaEscribir extends Activity implements OnCheckedChangeListener {
 							boolean arg1) {
 
 						// TODO Auto-generated method stub
-						if (arg1 == true) {
-							((LinearLayout) findViewById(R.id.make_public_layout))
-									.setBackgroundResource(R.drawable.my_border_white_open_all_selected);
-						} else {
-							((LinearLayout) findViewById(R.id.make_public_layout))
-									.setBackgroundResource(R.drawable.my_border_white_open_all);
-						}
+//						if (arg1 == true) {
+//							((LinearLayout) findViewById(R.id.make_public_layout))
+//									.setBackgroundResource(R.drawable.my_border_white_open_all_selected);
+//						} else {
+//							((LinearLayout) findViewById(R.id.make_public_layout))
+//									.setBackgroundResource(R.drawable.my_border_white_open_all);
+//						}
 					}
 				});
 		for (int i = 0; i < checks.size(); i++) {

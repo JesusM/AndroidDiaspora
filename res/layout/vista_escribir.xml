@@ -19,8 +19,9 @@
 			android:paddingLeft="6dip" android:layout_centerVertical="true"
 			android:layout_alignParentLeft="true" android:textSize="20dip"
 			android:gravity="center_vertical" android:layout_height="wrap_content"
-			android:text="¿What's on your mind?" android:textColor="@color/white" android:layout_toLeftOf="@id/share"
-			android:textStyle="bold" android:layout_gravity="left|center_vertical" />
+			android:text="What's on your mind?" android:textColor="@color/white"
+			android:layout_toLeftOf="@id/share" android:textStyle="bold"
+			android:layout_gravity="left|center_vertical" />
 
 	</RelativeLayout>
 
@@ -28,27 +29,25 @@
 		android:orientation="vertical" android:layout_height="wrap_content"
 		android:layout_marginLeft="10px" android:layout_marginRight="10px"
 		android:layout_marginTop="20dip">
-		<EditText android:layout_width="fill_parent" android:hint="..y qué te cuentas?"
+		<EditText android:layout_width="fill_parent"
 			android:layout_marginTop="3px" android:lines="4"
 			android:layout_height="80px"></EditText>
-		<LinearLayout android:layout_width="fill_parent"
-			android:background="@drawable/my_border_white_open_all" android:id="@+id/make_public_layout"
-			android:orientation="horizontal" android:layout_height="wrap_content">
-			<CheckBox android:layout_width="fill_parent" android:text="make public"
-				android:layout_gravity="center_vertical" android:id="@+id/make_public"
-				android:textColor="@color/black" android:layout_height="wrap_content"></CheckBox>
-		</LinearLayout>
+
+		<CheckBox android:layout_width="fill_parent" android:text="make public"
+			android:layout_gravity="center_vertical" android:id="@+id/make_public"
+			android:textColor="@color/black" android:layout_height="wrap_content"></CheckBox>
+
 
 		<TextView android:layout_width="fill_parent"
 			android:layout_marginTop="20px" android:layout_height="wrap_content"
 			android:textColor="@color/dkgray" android:textStyle="bold"
-			android:gravity="left" android:text="Elegir servicios"
+			android:gravity="left" android:text="Choice services"
 			android:layout_marginBottom="10dip"></TextView>
 		<LinearLayout android:layout_width="fill_parent"
 			android:id="@+id/layoutaAnadir" android:orientation="vertical"
 			android:layout_height="wrap_content">
 		</LinearLayout>
-		
+
 	</LinearLayout>
 
 

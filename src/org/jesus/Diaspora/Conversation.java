@@ -19,21 +19,21 @@ public class Conversation extends Activity {
 		setContentView(R.layout.conversation);
 		loadInterface();
 		
-		((TextView)findViewById(R.id.response)).setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				arg0.setFocusable(true);
-				//((EditText)findViewById(R.id.respon)).setFocusable(true);
-			}});
-		((TextView)findViewById(R.id.erase)).setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				((LinearLayout) findViewById(R.id.rellenar)).removeAllViews();
-			}});
+//		((TextView)findViewById(R.id.response)).setOnClickListener(new OnClickListener(){
+//
+//			@Override
+//			public void onClick(View arg0) {
+//				// TODO Auto-generated method stub
+//				arg0.setFocusable(true);
+//				//((EditText)findViewById(R.id.respon)).setFocusable(true);
+//			}});
+//		((TextView)findViewById(R.id.erase)).setOnClickListener(new OnClickListener(){
+//
+//			@Override
+//			public void onClick(View arg0) {
+//				// TODO Auto-generated method stub
+//				((LinearLayout) findViewById(R.id.rellenar)).removeAllViews();
+//			}});
 	}
 
 	private void loadInterface() {

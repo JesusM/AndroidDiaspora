@@ -50,7 +50,7 @@
 				</LinearLayout>
 
 				<TextView android:layout_width="fill_parent" android:id='@+id/cartel2'
-					android:text="¿Don't remember your password?"
+					android:text="Don't remember your password?"
 					android:layout_weight="1" android:layout_height="wrap_content"
 					android:gravity="center" android:textSize='14dip'
 					android:layout_marginRight='17dip' android:layout_marginLeft='17dip'
