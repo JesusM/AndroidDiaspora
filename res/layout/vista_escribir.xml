@@ -41,7 +41,7 @@
 		<TextView android:layout_width="fill_parent"
 			android:layout_marginTop="20px" android:layout_height="wrap_content"
 			android:textColor="@color/dkgray" android:textStyle="bold"
-			android:gravity="left" android:text="Choice services"
+			android:gravity="left" android:text="Choose services"
 			android:layout_marginBottom="10dip"></TextView>
 		<LinearLayout android:layout_width="fill_parent"
 			android:id="@+id/layoutaAnadir" android:orientation="vertical"
