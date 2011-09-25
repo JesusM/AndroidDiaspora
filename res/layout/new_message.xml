@@ -1,71 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:background="@color/lightgray" android:layout_marginLeft="5dip"
-	android:layout_marginRight="5dip">
-	<LinearLayout android:layout_width="fill_parent"
-		android:layout_height="fill_parent" android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/white">
+	<RelativeLayout android:id="@+id/label_header"
+		android:background="@drawable/home_actionbar" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView android:layout_width="fill_parent"
+			android:paddingLeft="6dip" android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true" android:textSize="20dip"
+			android:gravity="center_vertical" android:layout_height="wrap_content"
+			android:text="New message" android:textColor="@color/white"
+			android:textStyle="bold" android:layout_gravity="left|center_vertical" />
+		<Button android:paddingRight="18dip" android:paddingBottom="8dip"
+			android:paddingLeft="18dip" android:paddingTop="8dip" android:text="Send"
+			android:layout_height="wrap_content" android:textColor="@color/white"
+			android:layout_width="wrap_content" android:background="@drawable/widgets_kennedy_blue_button_default"
+			android:layout_centerVertical="true" android:layout_alignParentRight="true"></Button>
+	</RelativeLayout>
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:gravity="center_vertical"
+		android:layout_height="fill_parent">
 		<LinearLayout android:layout_width="fill_parent"
-			android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
-			android:layout_height="wrap_content" android:background="@drawable/my_border_open_bottom_black"
-			android:layout_marginTop="5dip">
-			<TextView android:layout_width="fill_parent"
-				android:paddingLeft="10dip" android:textSize="20dip"
-				android:paddingTop="13dip" android:paddingBottom="13dip"
-				android:layout_height="wrap_content" android:text="New Message"
-				android:textColor="@color/white" android:gravity="left"></TextView>
-		</LinearLayout>
-		<LinearLayout android:layout_width="fill_parent"
-			android:layout_marginTop="15dip" android:layout_height="wrap_content"
-			android:layout_marginLeft="10dip">
+			android:layout_gravity="center" android:layout_marginTop="15dip"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip">
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="To"
+				android:textColor="@color/black" android:textStyle="bold" />
 			<EditText android:layout_width="fill_parent" android:hint="To"
-				android:shadowColor="@color/blue" android:shadowDx="3.5"
-				android:paddingTop="6dip" android:paddingBottom="6dip"
-				android:layout_marginRight="10dip" android:layout_height="wrap_content"
-				android:gravity="left|center_vertical"></EditText>
+				android:layout_marginLeft="12dip" android:shadowColor="@color/blue"
+				android:shadowDx="3.5" android:layout_marginRight="10dip"
+				android:layout_height="wrap_content" android:gravity="left|center_vertical"></EditText>
 		</LinearLayout>
 		<LinearLayout android:layout_width="fill_parent"
-			android:layout_marginTop="15dip" android:layout_height="wrap_content"
-			android:paddingBottom="10dip" android:layout_marginLeft="10dip">
-
-			<EditText android:layout_width="fill_parent" android:hint="Asunto"
-				android:paddingTop="6dip" android:paddingBottom="6dip"
-				android:layout_marginRight="10dip" android:layout_height="wrap_content"
-				android:gravity="left|center_vertical"></EditText>
+			android:layout_gravity="center" android:layout_marginTop="15dip"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip">
+			<TextView android:layout_width="wrap_content"
+				android:textStyle="bold" android:layout_height="wrap_content"
+				android:text="Subject" android:textColor="@color/black" />
+			<EditText android:layout_width="fill_parent" android:hint="Subject"
+				android:layout_marginLeft="12dip" android:layout_marginRight="10dip"
+				android:layout_height="wrap_content" android:gravity="left|center_vertical"></EditText>
 		</LinearLayout>
 		<LinearLayout android:layout_width="fill_parent"
-
-			android:layout_marginTop="15dip" android:layout_height="fill_parent"
-			android:paddingTop="10dip" android:paddingBottom="10dip"
-			android:layout_marginLeft="10dip">
-
-			<!--
-				<EditText android:layout_width="fill_parent" android:hint="Message"
-			-->
-			<!--
-				android:paddingBottom="6dip" android:layout_marginRight="10dip"
-			-->
-			<!--
-				android:layout_marginBottom="10dip"
-				android:layout_height="fill_parent"
-			-->
-			<!--				android:lines="6" android:gravity="top|left"></EditText>-->
-
+			android:layout_gravity="center" android:layout_marginTop="15dip"
+			android:layout_marginLeft="10dip" android:layout_height="wrap_content">
+			<TextView android:layout_width="wrap_content"
+				android:textStyle="bold" android:layout_height="wrap_content"
+				android:text="Message" android:textColor="@color/black" />
 			<EditText android:layout_width="fill_parent" android:hint="Message"
-				android:scrollHorizontally="false" android:maxLines="3"
-				android:textAppearance="?android:attr/textAppearanceMedium"
-				android:paddingBottom="6dip" android:layout_marginRight="10dip"
-				android:layout_marginBottom="10dip" android:layout_height="fill_parent"
+				android:layout_marginLeft="12dip" android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_marginRight="10dip" android:layout_height="wrap_content"
 				android:lines="6" android:gravity="top|left"></EditText>
 		</LinearLayout>
-		<LinearLayout android:layout_width="fill_parent"
-			android:layout_marginRight="10dip" android:layout_height="wrap_content"
-			android:gravity="right">
-			<Button android:layout_width="wrap_content" android:textColor="@color/black"
-				android:paddingLeft="18dip" android:paddingTop="8dip"
-				android:paddingBottom="8dip" android:layout_height="wrap_content"
-				android:paddingRight="18dip" android:background="@drawable/my_border_orange_open_all"
-				android:text="Send" android:layout_gravity="right"></Button>
-		</LinearLayout>
 	</LinearLayout>
-</ScrollView>
+
+
+</LinearLayout>

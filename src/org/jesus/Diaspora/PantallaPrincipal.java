@@ -38,8 +38,8 @@ public class PantallaPrincipal extends Activity {
 		settings.getString("aspecto", "all aspects");
 		((TextView) findViewById(R.id.aspect)).setText(settings.getString(
 				"aspecto", "all aspects"));
-		//ComentariosAdapter ta = new ComentariosAdapter(this);
-		//a.setAdapter(ta);
+//		ComentariosAdapter ta = new ComentariosAdapter(this);
+//		a.setAdapter(ta);
 		cargarComentarios();
 		((ImageView) findViewById(R.id.iconolista))
 				.setOnClickListener(new OnClickListener() {

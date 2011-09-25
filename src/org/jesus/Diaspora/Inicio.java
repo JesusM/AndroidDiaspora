@@ -20,10 +20,12 @@ import android.widget.TextView;
 public class Inicio extends Activity {
 	/** Called when the activity is first created. */
 	SharedPreferences settings;
+	Animation a = null;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		settings = getSharedPreferences("org.jesus.diaspora.accounts",
 				MODE_PRIVATE);
@@ -35,26 +37,6 @@ public class Inicio extends Activity {
 						@Override
 						public void onClick(View arg0) {
 							// TODO Auto-generated method stub
-							/*
-							 * if (!((EditText)
-							 * findViewById(R.id.user)).getText().toString()
-							 * .equals("") &&
-							 * !((EditText)findViewById(R.id.pass)).getText
-							 * ().toString().equals("")) { SharedPreferences
-							 * settings = getSharedPreferences(
-							 * "entrada de datos", MODE_PRIVATE);
-							 * SharedPreferences.Editor editor = settings
-							 * .edit();
-							 * 
-							 * editor.putString("Contraseña", ((EditText)
-							 * findViewById(R.id.user)) .getText().toString());
-							 * editor.putString("Usuario",
-							 * ((EditText)findViewById(R.
-							 * id.pass)).getText().toString()); editor.commit();
-							 * Intent in = ; startActivity(new
-							 * Intent(Inicio.this, PantallaPrincipal.class));
-							 * finish(); }
-							 */
 							RunAnimations();
 							new CountDownTimer(5000, 1000) {
 
@@ -103,22 +85,13 @@ public class Inicio extends Activity {
 	}
 
 	private void RunAnimations() {
-		Animation a = AnimationUtils.loadAnimation(this, R.anim.rotate);
-		a.reset();
+		a = AnimationUtils.loadAnimation(this, R.anim.rotate);
+//		a.setRepeatMode(Animation.INFINITE);
+		// a.reset();
 		ImageView tv = (ImageView) findViewById(R.id.asterisk_rotate);
-		tv.clearAnimation();
+		// tv.clearAnimation();
 		tv.startAnimation(a);
+		
 
-		// a = AnimationUtils.loadAnimation(this, R.anim.translate);
-		// a.reset();
-		// tv = (TextView) findViewById(R.id.secondTextView);
-		// tv.clearAnimation();
-		// tv.startAnimation(a);
-		//	 
-		// a = AnimationUtils.loadAnimation(this, R.anim.rotate);
-		// a.reset();
-		// tv = (TextView) findViewById(R.id.thirdTextView);
-		// tv.clearAnimation();
-		// tv.startAnimation(a);
 	}
 }

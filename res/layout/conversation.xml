@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:background="@color/lightgray">
+	android:background="@color/white">
 	<LinearLayout android:layout_width="fill_parent"
 		android:layout_height="fill_parent" android:orientation="vertical"
 		android:focusable="true" android:focusableInTouchMode="true">
@@ -31,14 +31,14 @@
 					android:paddingRight="10dip" android:id="@+id/asunto"
 					android:layout_toLeftOf="@id/photo_dest" android:layout_toRightOf="@id/photo_env"
 					android:layout_height="wrap_content" android:textSize="25dip"
-					android:text="Asunto"></TextView>
+					android:text="Subject"></TextView>
 
 			</RelativeLayout>
 		</LinearLayout>
 
-		<LinearLayout android:layout_width="fill_parent"
-			android:layout_marginBottom="15dip" android:layout_height="2dip"
-			android:background="@color/gray"></LinearLayout>
+<!-- 		<LinearLayout android:layout_width="fill_parent" -->
+<!-- 			android:layout_marginBottom="15dip" android:layout_height="2dip" -->
+<!-- 			android:background="@color/gray"></LinearLayout> -->
 		<LinearLayout android:layout_width="fill_parent"
 			android:layout_height="wrap_content" android:id="@+id/rellenar"
 			android:orientation="vertical"></LinearLayout>
@@ -53,10 +53,12 @@
 				android:layout_height="wrap_content" android:lines="4"></EditText>
 		</LinearLayout>
 
-		<Button android:layout_width="wrap_content" android:id="@+id/a" android:padding="4dip"
+		<Button android:id="@+id/a"
+			android:paddingLeft="15dip" android:paddingRight="15dip"
 			android:layout_gravity="right" android:layout_height="wrap_content"
 			android:layout_marginRight="7dip" android:textColor="@color/black"
-			android:background="@drawable/my_border_all_open" android:text="Aceptar"></Button>
+			android:text="Send" android:layout_width="wrap_content"></Button>
+		<!-- android:background="@drawable/my_border_all_open" -->
 
 	</LinearLayout>
-</ScrollView>
+</LinearLayout>

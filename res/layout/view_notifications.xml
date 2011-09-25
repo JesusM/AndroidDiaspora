@@ -48,9 +48,6 @@
 <!--				android:textStyle="bold" android:background="@drawable/my_border_not_open"></Button>-->
 <!--		</RelativeLayout>-->
 		<LinearLayout android:orientation="vertical"
-			android:layout_marginTop="14dip" android:layout_width="fill_parent"
-			android:layout_height="1dip" android:background="@color/gray"></LinearLayout>
-		<LinearLayout android:orientation="vertical"
 			android:id="@+id/layout_notif_a_rellenar" android:layout_marginTop="14dip"
 			android:layout_width="fill_parent" android:layout_height="wrap_content"></LinearLayout>
 	</LinearLayout>
