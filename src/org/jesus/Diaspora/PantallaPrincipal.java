@@ -83,7 +83,7 @@ public class PantallaPrincipal extends Activity {
 			
 			LayoutInflater inflater = this.getLayoutInflater();
 			View item = null;
-			item = inflater.inflate(R.layout.comentario, null);
+			item = inflater.inflate(R.layout.comment, null);
 
 			ImageView a = (ImageView) item.findViewById(R.id.PhotoProfile);
 			
@@ -101,16 +101,23 @@ public class PantallaPrincipal extends Activity {
 					.setText("Finalizado el V Concurso Universitario de Software Libre, "
 							+ "tras la fase final en Granada, conociendo a muy buena gente y exponiendo nuestros proyectos, "
 							+ "me vuelvo a casa con el orgullo de haber recibido el Premio Especial del Concurso (que se corresponde con el primer premio).");
-			((TextView) item.findViewById(R.id.comentarioResponses))
-					.setOnClickListener(new OnClickListener() {
+//			((TextView) item.findViewById(R.id.comentarioResponses))
+//					.setOnClickListener(new OnClickListener() {
+//
+//						@Override
+//						public void onClick(View arg0) {
+//							// TODO Auto-generated method stub
+//							startActivity(new Intent(PantallaPrincipal.this,
+//									VistaComentarios.class));
+//						}
+//					});
+			item.setOnClickListener(new OnClickListener(){
 
-						@Override
-						public void onClick(View arg0) {
-							// TODO Auto-generated method stub
-							startActivity(new Intent(PantallaPrincipal.this,
-									VistaComentarios.class));
-						}
-					});
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					startActivity(new Intent(PantallaPrincipal.this,VistaComentarios.class));
+				}});
 			((TextView) item.findViewById(R.id.comentarioSince))
 					.setText("hace 2 días");
 			((TextView) item.findViewById(R.id.comentarioResponses))
@@ -148,7 +155,7 @@ public class PantallaPrincipal extends Activity {
 		public View getView(int arg0, View arg1, ViewGroup arg2) {
 			LayoutInflater inflater = c.getLayoutInflater();
 			View item = null;
-			item = inflater.inflate(R.layout.comentario, null);
+			item = inflater.inflate(R.layout.comment, null);
 
 			ImageView a = (ImageView) item.findViewById(R.id.PhotoProfile);
 			
@@ -166,16 +173,16 @@ public class PantallaPrincipal extends Activity {
 					.setText("Finalizado el V Concurso Universitario de Software Libre, "
 							+ "tras la fase final en Granada, conociendo a muy buena gente y exponiendo nuestros proyectos, "
 							+ "me vuelvo a casa con el orgullo de haber recibido el Premio Especial del Concurso (que se corresponde con el primer premio).");
-			((TextView) item.findViewById(R.id.comentarioResponses))
-					.setOnClickListener(new OnClickListener() {
-
-						@Override
-						public void onClick(View arg0) {
-							// TODO Auto-generated method stub
-							startActivity(new Intent(PantallaPrincipal.this,
-									VistaComentarios.class));
-						}
-					});
+//			((TextView) item.findViewById(R.id.comentarioResponses))
+//					.setOnClickListener(new OnClickListener() {
+//
+//						@Override
+//						public void onClick(View arg0) {
+//							// TODO Auto-generated method stub
+//							startActivity(new Intent(PantallaPrincipal.this,
+//									VistaComentarios.class));
+//						}
+//					});
 			((TextView) item.findViewById(R.id.comentarioSince))
 					.setText("hace 2 días");
 			((TextView) item.findViewById(R.id.comentarioResponses))

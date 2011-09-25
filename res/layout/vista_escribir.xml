@@ -31,6 +31,7 @@
 		android:layout_marginTop="20dip">
 		<EditText android:layout_width="fill_parent"
 			android:layout_marginTop="3px" android:lines="4"
+			android:textAppearance="?android:attr/textAppearanceMedium"
 			android:layout_height="80px"></EditText>
 
 		<CheckBox android:layout_width="fill_parent" android:text="make public"

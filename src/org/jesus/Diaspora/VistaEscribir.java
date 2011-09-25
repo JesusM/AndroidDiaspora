@@ -132,27 +132,27 @@ public class VistaEscribir extends Activity implements OnCheckedChangeListener {
 		// TODO Auto-generated method stub
 		if (arg0.getId() == 0) {
 			if (arg1 == true) {
-				lCheck.get(arg0.getId()).setBackgroundResource(
-						R.drawable.my_border_edittext_open_bottom_selected);
+//				lCheck.get(arg0.getId()).setBackgroundResource(
+//						R.drawable.my_border_edittext_open_bottom_selected);
 			} else {
-				lCheck.get(arg0.getId()).setBackgroundResource(
-						R.drawable.my_border_edittext_open_bottom);
+//				lCheck.get(arg0.getId()).setBackgroundResource(
+//						R.drawable.my_border_edittext_open_bottom);
 			}
 		} else if (arg0.getId() == lCheck.size() - 1) {
 			if (arg1 == true) {
-				lCheck.get(arg0.getId()).setBackgroundResource(
-						R.drawable.my_border_edittext_open_top_selected);
+//				lCheck.get(arg0.getId()).setBackgroundResource(
+//						R.drawable.my_border_edittext_open_top_selected);
 			} else {
-				lCheck.get(arg0.getId()).setBackgroundResource(
-						R.drawable.my_border_edittext_open_top);
+//				lCheck.get(arg0.getId()).setBackgroundResource(
+//						R.drawable.my_border_edittext_open_top);
 			}
 		} else {
 			if (arg1 == true) {
-				lCheck.get(arg0.getId()).setBackgroundResource(
-						R.drawable.my_border_not_open_selected);
+//				lCheck.get(arg0.getId()).setBackgroundResource(
+//						R.drawable.my_border_not_open_selected);
 			} else {
-				lCheck.get(arg0.getId()).setBackgroundResource(
-						R.drawable.my_border_not_open);
+//				lCheck.get(arg0.getId()).setBackgroundResource(
+//						R.drawable.my_border_not_open);
 			}
 		}
 	}

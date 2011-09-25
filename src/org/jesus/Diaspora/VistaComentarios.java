@@ -14,6 +14,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -31,8 +32,9 @@ public class VistaComentarios extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.vista_comment);
-		Toast.makeText(getBaseContext(), "example of view of comments", Toast.LENGTH_LONG).show();
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		setContentView(R.layout.view_comment);
+		Toast.makeText(getBaseContext(), "example responses of a comment", Toast.LENGTH_LONG).show();
 		rellenarListaComentarios();
 		/**
 		 * Rellenar el layout segÃºn los comentarios que tenga
@@ -62,34 +64,34 @@ public class VistaComentarios extends Activity {
 						}
 					}
 				});
-		((ImageView)findViewById(R.id.iconobusqueda)).setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(VistaComentarios.this,
-						VistaBusqueda.class));
-				finish();
-			}});
-		((ImageView) findViewById(R.id.iconolista))
-		.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(VistaComentarios.this,
-						ViewAspects.class));
-				finish();
-			}
-		});
-		((ImageView)findViewById(R.id.letrero)).setOnClickListener(new OnClickListener(){
-
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(VistaComentarios.this,PantallaPrincipal.class));
-				finish();
-			}});
+//		((ImageView)findViewById(R.id.iconobusqueda)).setOnClickListener(new OnClickListener(){
+//
+//			@Override
+//			public void onClick(View arg0) {
+//				// TODO Auto-generated method stub
+//				startActivity(new Intent(VistaComentarios.this,
+//						VistaBusqueda.class));
+//				finish();
+//			}});
+//		((ImageView) findViewById(R.id.iconolista))
+//		.setOnClickListener(new OnClickListener() {
+//
+//			@Override
+//			public void onClick(View arg0) {
+//				// TODO Auto-generated method stub
+//				startActivity(new Intent(VistaComentarios.this,
+//						ViewAspects.class));
+//				finish();
+//			}
+//		});
+//		((ImageView)findViewById(R.id.letrero)).setOnClickListener(new OnClickListener(){
+//
+//			@Override
+//			public void onClick(View v) {
+//				// TODO Auto-generated method stub
+//				startActivity(new Intent(VistaComentarios.this,PantallaPrincipal.class));
+//				finish();
+//			}});
 
 	}
 
@@ -252,24 +254,24 @@ public class VistaComentarios extends Activity {
 	private void rellenarListaComentarios() {
 		// TODO Auto-generated method stub
 
-		lista.add(new Comentario("David Perez Zaba", "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo." +
+		lista.add(new Comentario("Jesús", "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo." +
 				" Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
 				BitmapFactory.decodeResource(getResources(), R.drawable.custom_photo),
 				new Date(System.currentTimeMillis())));
-		lista.add(new Comentario("David Perez Zaba", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
+		lista.add(new Comentario("John", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
 				"Aenean commodo ligula eget dolor.",
 				BitmapFactory.decodeResource(getResources(), R.drawable.photo),
 				new Date(System.currentTimeMillis())));
-		lista.add(new Comentario("David Perez Zaba", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
+		lista.add(new Comentario("Marc", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
 				"Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes," +
 				" nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
 				BitmapFactory.decodeResource(getResources(), R.drawable.custom_photo),
 				new Date(System.currentTimeMillis())));
-		lista.add(new Comentario("David Perez Zaba", "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo." +
+		lista.add(new Comentario("Travis", "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo." +
 				" Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
 				BitmapFactory.decodeResource(getResources(), R.drawable.photo),
 				new Date(System.currentTimeMillis())));
-		lista.add(new Comentario("David Perez Zaba", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
+		lista.add(new Comentario("Carl", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. " +
 				"Aenean commodo ligula eget dolor.",
 				BitmapFactory.decodeResource(getResources(), R.drawable.custom_photo),
 				new Date(System.currentTimeMillis())));
