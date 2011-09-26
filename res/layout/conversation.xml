@@ -36,29 +36,36 @@
 			</RelativeLayout>
 		</LinearLayout>
 
-<!-- 		<LinearLayout android:layout_width="fill_parent" -->
-<!-- 			android:layout_marginBottom="15dip" android:layout_height="2dip" -->
-<!-- 			android:background="@color/gray"></LinearLayout> -->
-		<LinearLayout android:layout_width="fill_parent"
-			android:layout_height="wrap_content" android:id="@+id/rellenar"
-			android:orientation="vertical"></LinearLayout>
-		<LinearLayout android:layout_width="fill_parent"
-			android:paddingLeft="5dip" android:paddingRight="5dip"
-			android:layout_marginTop="12dip" android:layout_height="wrap_content"
-			android:layout_marginBottom="10dip">
-			<ImageView android:layout_width="45dip"
-				android:layout_height="45dip" android:src="@drawable/custom_photo"></ImageView>
-			<EditText android:layout_width="fill_parent" android:id="@+id/respon"
-				android:layout_marginLeft="7dip" android:paddingLeft="5dip"
-				android:layout_height="wrap_content" android:lines="4"></EditText>
-		</LinearLayout>
+		<!-- 		<LinearLayout android:layout_width="fill_parent" -->
+		<!--
+			android:layout_marginBottom="15dip" android:layout_height="2dip"
+		-->
+		<!-- 			android:background="@color/gray"></LinearLayout> -->
+		<ScrollView android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:id="@+id/rellenar"
+					android:orientation="vertical"></LinearLayout>
+				<LinearLayout android:layout_width="fill_parent"
+					android:paddingLeft="5dip" android:paddingRight="5dip"
+					android:layout_marginTop="12dip" android:layout_height="wrap_content"
+					android:layout_marginBottom="10dip">
+					<ImageView android:layout_width="45dip"
+						android:layout_height="45dip" android:src="@drawable/custom_photo"></ImageView>
+					<EditText android:layout_width="fill_parent" android:id="@+id/respon"
+						android:layout_marginLeft="7dip" android:paddingLeft="5dip"
+						android:layout_height="wrap_content" android:lines="4"></EditText>
+				</LinearLayout>
 
-		<Button android:id="@+id/a"
-			android:paddingLeft="15dip" android:paddingRight="15dip"
-			android:layout_gravity="right" android:layout_height="wrap_content"
-			android:layout_marginRight="7dip" android:textColor="@color/black"
-			android:text="Send" android:layout_width="wrap_content"></Button>
-		<!-- android:background="@drawable/my_border_all_open" -->
-
+				<Button android:id="@+id/a" android:paddingLeft="15dip"
+					android:paddingRight="15dip" android:layout_gravity="right"
+					android:layout_height="wrap_content" android:layout_marginRight="7dip"
+					android:textColor="@color/black" android:text="Send"
+					android:layout_width="wrap_content"></Button>
+				<!-- android:background="@drawable/my_border_all_open" -->
+			</LinearLayout>
+		</ScrollView>
 	</LinearLayout>
 </LinearLayout>
