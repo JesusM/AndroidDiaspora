@@ -32,6 +32,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>GreenDroid_src</name>
+			<type>2</type>
+			<locationURI>_android_GreenDroid_612cb559/src</locationURI>
+		</link>
+		<link>
 			<name>com_jakewharton_android_viewpagerindicator_src</name>
 			<type>2</type>
 			<locationURI>_android_com_jakewharton_android_viewpagerindicator_38a12e1e/src</locationURI>

@@ -1,5 +1,7 @@
 package org.jesus.Diaspora;
 
+import greendroid.app.GDActivity;
+
 import java.util.ArrayList;
 import java.sql.Date;
 import java.util.List;
@@ -34,6 +36,7 @@ public class VistaComentarios extends Activity {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.view_comment);
+//		setTitle("Comments");
 		Toast.makeText(getBaseContext(), "example responses of a comment", Toast.LENGTH_LONG).show();
 		rellenarListaComentarios();
 		/**
@@ -254,7 +257,7 @@ public class VistaComentarios extends Activity {
 	private void rellenarListaComentarios() {
 		// TODO Auto-generated method stub
 
-		lista.add(new Comentario("Jesús", "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo." +
+		lista.add(new Comentario("Jesï¿½s", "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo." +
 				" Nullam dictum felis eu pede mollis pretium. Integer tincidunt.",
 				BitmapFactory.decodeResource(getResources(), R.drawable.custom_photo),
 				new Date(System.currentTimeMillis())));
